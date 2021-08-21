@@ -3231,5 +3231,9 @@ input[type=text]::-ms-clear {
     .simform {
         font-size: 1.2em;
     }
+
+    .navbar-default img{
+        float: center !important;
+    }
 }
 
