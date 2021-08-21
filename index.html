@@ -688,18 +688,19 @@
                 } else {
                     // $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
                 }
+                $('img.lazyloading').imgLazyLoad({
+                    container: window,
+                    effect: 'fadeIn',
+                    speed: 600,
+                    delay: 400,
+                    callback: function(){
+                        $( this ).css( 'opacity', .99 );
+                    }
+                });
             });
         </script>
         <script>
-            $('img.lazyloading').imgLazyLoad({
-                container: window,
-                effect: 'fadeIn',
-                speed: 600,
-                delay: 400,
-                callback: function(){
-                    $( this ).css( 'opacity', .99 );
-                }
-            });
+            
         </script>
     </body>
 </html>
